@@ -119,6 +119,7 @@ yum install -y git
 ### docker
 ###
 
+# docker
 yum -y install lvm2 device-mapper device-mapper-persistent-data device-mapper-event device-mapper-libs device-mapper-event-libs
 yum  -y remove  docker-common docker container-selinux docker-selinux docker-engine
 wget https://download.docker.com/linux/centos/docker-ce.repo -O /etc/yum.repos.d/docker-ce.repo
@@ -129,13 +130,13 @@ systemctl enable docker
 
 sudo usermod -aG docker vagrant
 
+# docker-compose
+sudo curl -L "https://github.com/docker/compose/releases/download/1.23.2/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose
+sudo chmod +x /usr/local/bin/docker-compose
+sudo ln -s /usr/local/bin/docker-compose /usr/bin/docker-compose
 
 ###
 ### 動作確認のため
 ###
 
-mkdir /mnt/project/lesson
-ln -fs /mnt/project/lesson /var/www/html/lesson
-
 echo '<?php phpinfo();' > /var/www/html/index.php
-echo 'hellolesson!' > /mnt/project/lesson/index.php
