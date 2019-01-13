@@ -26,7 +26,7 @@ dockerコマンドは、sudo をつけなくても実行できるようにして
 ```
 docker version
 ```
-出力
+出力例
 ```
 Client:
  Version:           18.09.1
