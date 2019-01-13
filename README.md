@@ -5,6 +5,7 @@
 プライベートIPアドレス：`192.168.33.20`
 
 以下にDocker・Docker Composeを追加したものです
+
 https://github.com/carrry0209/vagrant_lamp
 
 
@@ -16,6 +17,7 @@ mv vagrant_docker vagrant
 ```
 
 その他立ち上げ方などは、以下の `How to use` に記載してあります
+
 https://github.com/carrry0209/vagrant_lamp
 
 ## 動作確認
